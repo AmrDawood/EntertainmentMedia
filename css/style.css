@@ -1,0 +1,63 @@
+
+:root{ 
+    /* change acroll behavior from smooth (bootstrap 5 default value) to auto as it cause JQuery animate scrollTop not 
+    to work */
+    scroll-behavior: auto;
+}
+body{
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+
+}
+/* search inputs */
+/* search inputs */
+
+/* sidebar */
+.mainSidebar {
+    background-color: #1f1f1f;
+    z-index: 10;
+    width: 17rem;
+    left: -17rem;
+    transition: left 1s ease-in-out;
+}
+
+.mainSidebar li{
+    background-color: transparent;
+    color: #fff;
+    border-color:#fff;
+}
+.list-group-flush>.list-group-item:last-child {
+    border-bottom-width: 1px;
+}
+.list-group-item-action:focus, .list-group-item-action:hover{
+    cursor: pointer;
+    background-color:#fff ;
+    color: #000;
+}
+.logo{
+    border-bottom: 1px solid #fff;
+}
+.account{
+    border-top: 1px solid #fff;
+}
+/* Media Items */
+.mediaItemLayer{
+    z-index: 3;
+    top: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    transition: top 1s ease-in-out;
+}
+.mediaItem img{
+    filter: grayscale(50%);
+    transition: transform 1s ease-in-out;
+}
+.mediaItem:hover .mediaItemLayer{
+    top: 0 ;
+}
+.mediaItem:hover img{
+    transform: scale(1.1 , 1.1);
+}
+/* Media Items */
+/* toggleIcon */
+.toggleIcon svg{
+}
